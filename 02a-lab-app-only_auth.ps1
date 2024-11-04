@@ -11,10 +11,14 @@ $certPath = "C:\eid-msgraphps\PowerShellTrainingCert.cer"
 
 Export-Certificate -Cert $cert -FilePath $certPath
 
+# The following commands run in PowerShell 7
+
 # Register the application
 
 # First, you're using the PowerShell SDK with delegated access, logging in as an administrator, and creating the app registration.
 # Then, using that app registration, you're able to use the PowerShell SDK with app-only access, allowing for unattended scripts.
+
+$certPath = "C:\eid-msgraphps\PowerShellTrainingCert.cer"
 
 cd c:\eid-msgraphps
 code .\RegisterAppOnly.ps1
